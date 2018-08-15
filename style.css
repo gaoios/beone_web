@@ -1,5 +1,5 @@
 /*-----------------------------------------------------------------------------------
-	    BeOne V0.3
+	    BeOne V0.4
         Built with Blocs
 -----------------------------------------------------------------------------------*/
 
@@ -616,6 +616,9 @@ a[data-lightbox]:hover img{
   .container{
 	max-width:970px;
 }
+.blocs-mobile-signup-text{
+	font-size:33px;
+}
 
 /* = Colour
 -------------------------------------------------------------- */
@@ -636,8 +639,8 @@ a[data-lightbox]:hover img{
 .bg-tile-d-bg{
 	background-image:url("img/tile-d-bg.png");
 }
-.bg-cityskyoverlay{
-	background-image:url("http://7xl0ck.com1.z0.glb.clouddn.com/cityskyoverlay.png");
+.bg-sky-3x{
+	background-image:url("http://7xl0ck.com1.z0.glb.clouddn.com/sky@3x.png");
 }
 
 
@@ -814,6 +817,9 @@ a[data-lightbox]:hover img{
 }
 @media (max-width: 767px){
 	.bloc-mob-center-text{
+	text-align:center;
+}
+.blocs-mobile-signup-text{
 	text-align:center;
 }
  }
