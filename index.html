@@ -1,25 +1,38 @@
 <!doctype html>
-<html>
+<html lang="Default">
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="">
     <meta name="description" content="">
-    <link rel="shortcut icon" type="image/png" href="favicon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
-    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
-    <link rel="stylesheet" id="ppstyle" type="text/css" href="style.css">
-    <link rel='stylesheet' href='./css/animate.css' /><link rel='stylesheet' href='./css/font-awesome.min.css'/>
-    <script src="./js/jquery-2.1.0.min.js"></script>
-    <script src="./js/bootstrap.js"></script>
-    <script src="./js/blocs.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
     
-    <title></title>
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="./css/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
+	
+    
+	<script src="./js/jquery-2.1.0.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/blocs.min.js"></script>
+	<script src="./js/jquery.touchSwipe.min.js" defer></script>
+	<script src="./js/lazysizes.min.js" defer></script>
+    <title>Home</title>
+
+    
+<!-- Google Analytics -->
+
+<!-- Google Analytics END -->
+    
 </head>
 <body>
 <!-- Main container -->
 <div class="page-container">
-    <!-- Hero Bloc --><div id="hero-bloc" class="bloc hero bgc-white bg-citysky-overlay d-bloc">
-	<div class="container bloc-sm hero-nav">
+    
+<!-- nav-bloc -->
+<!-- <div class="bloc l-bloc bgc-white" id="nav-bloc">
+	<div class="container bloc-sm">
 		<nav class="navbar row">
 			<div class="navbar-header">
 				<a class="navbar-brand" href="index.html">BeONE</a>
@@ -28,40 +41,80 @@
 				</button>
 			</div>
 			<div class="collapse navbar-collapse navbar-1">
-				<ul class="site-navigation nav navbar-nav pull-right">
+				<ul class="site-navigation nav navbar-nav">
 					<li>
-						<a id="pl-undefined" onclick="scrollToTarget(2)">Home</a>
+						<a href="product.html">test</a>
 					</li>
 					<li>
-						<a id="pl-undefined" onclick="scrollToTarget('#com-tools')">Product</a>
-					</li>
-					<li>
-						<a id="pl-undefined" onclick="scrollToTarget('#com-info')">About</a>
+						<a href="about.html">About</a>
 					</li>
 				</ul>
 			</div>
 		</nav>
 	</div>
-	<div class="v-center">
-		<div class="vc-content row">
+</div> -->
+<!-- nav-bloc END -->
+
+<!-- hero-bloc -->
+<div id="hero-bloc" class="bloc bgc-white none bg-cityskyoverlay d-bloc bloc-fill-screen full-width-bloc">
+	<!-- <div class="container fill-bloc-top-edge sticky-nav">
+		
+	</div> -->
+
+	<nav class="navbar row">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="index.html">BeONE</a>
+				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
+					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
+				<ul class="site-navigation nav navbar-nav pull-right none">
+					<li>
+						<a onclick="scrollToTarget('#hero-bloc')" id="pl-undefined">首页</a>
+					</li>
+					<li>
+						<a onclick="scrollToTarget('#com-tools')" id="pl-undefined">业务</a>
+					</li>
+					<li>
+						<a onclick="scrollToTarget('#com-member')" id="pl-undefined">团队</a>
+					</li>
+					<li>
+						<a onclick="scrollToTarget('#beon-gallary')">活动</a>
+					</li>
+					<li>
+						<a onclick="scrollToTarget('#com-connect')" id="pl-undefined">加入我们</a>
+					</li>
+					<li>
+						<a href="index.html">ENGLISH</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	<div class="container">
+		<div class="row">
 			<div class="col-sm-12">
 				<h1 class=" text-center">
-					LONG BEONE SHORT THE WORLD
+					LONG BEONE SHORT THE WORLD<br>
 				</h1>
 				<h3 class=" text-center mg-lg">
 					BeONE社群是一个分布式自治的组织，为区块链爱好者以及创新者提供交流和分享的平台
 				</h3>
 				<div class="text-center">
-					<a href="index.html" class="btn btn-xl btn-d">Get Started</a>
+					<a href="index.html" class="btn btn-xl btn-d btn-lg">Get Started</a>
 				</div>
 			</div>
-		</div><a id="scroll-hero" class="btn-dwn" href="#"><span class="fa fa-chevron-down animDelay02 animated fadeIn"></span></a><a id="scroll-hero" class="btn-dwn" href="#"><span class="fa fa-chevron-down animDelay02 animated fadeIn"></span></a>
+		</div><a id="scroll-hero" class="btn-dwn" href="#"><span class="fa fa-chevron-down"></span></a>
 	</div>
-</div><!-- Hero Bloc END --><!-- com-tools --><div class="bloc l-bloc bgc-white animated fadeIn animDelay02" id="com-tools">
-	<div class="container bloc-lg">
+</div>
+<!-- hero-bloc END -->
+
+<!-- com-tools -->
+<div class="bloc bgc-white bg-tile-d-bg l-bloc bg-repeat Down none fadeIn animated shake-hvr bloc-fill-screen b-divider full-width-bloc" id="com-tools">
+	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
-				<h1 class="text-center mg-lg">
+				<h1 class="text-center mg-lg ">
 					我们做什么
 				</h1>
 			</div>
@@ -91,13 +144,13 @@
 			</div>
 			<div class="col-sm-3">
 				<div class="text-center">
-					<span class="fa fa-graduation-cap icon-round icon-md"></span>
+					<span class="fa fa-rocket icon-round icon-md"></span>
 				</div>
 				<h3 class="text-center mg-md">
 					03/教育
 				</h3>
 				<p class="text-center">
-					区块链科普课程,区块链投资入门、进阶、高阶课程。<br /><br />思维模型课程，包括投资，设计，管理等，并持续开发中
+					区块链科普课程,区块链投资入门、进阶、高阶课程。<br><br>思维模型课程，包括投资，设计，管理等，并持续开发中
 				</p>
 			</div>
 			<div class="col-sm-3">
@@ -108,17 +161,26 @@
 					04/项目
 				</h3>
 				<p class="text-center">
-					任何社群成员可以发起项目<br /><br />如挖矿、30天读书打卡、量化交易、搬砖、EOS研究等。<br /><br />对社群发展有利或者有潜力的项目，社群基金将参与投资。
+					任何社群成员可以发起项目<br><br>如挖矿、30天读书打卡、量化交易、搬砖、EOS研究等。<br><br>对社群发展有利或者有潜力的项目，社群基金将参与投资。
 				</p>
 			</div>
 		</div>
 	</div>
-</div><!-- com-tools END --><!-- community-data --><div class="bloc l-bloc bgc-white b-parallax" id="community-data">
-	<div class="container bloc-xxl">
+</div>
+<!-- com-tools END -->
+
+<!-- community-data -->
+<div class="bloc bgc-white b-parallax bg-tile-d-bg l-bloc bg-repeat bloc-fill-screen b-divider" id="community-data">
+	<div class="container">
 		<div class="row">
+			<h1 class="mg-md text-center">
+				做的怎么样？
+			</h1>
+		</div>
+		<div class="row voffset">
 			<div class="text-center col-sm-4">
 				<h3>
-					200+
+					200+<br>
 				</h3>
 				<p>
 					社群成员
@@ -137,7 +199,7 @@
 					<strong>7000+</strong>
 				</h3>
 				<p>
-					覆盖人数
+					覆盖人数<br>
 				</p>
 			</div>
 		</div>
@@ -168,29 +230,33 @@
 			</div>
 		</div>
 	</div>
-</div><!-- community-data END --><!-- com-info --><div class="bloc l-bloc bgc-white" id="com-info">
-	<div class="container bloc-lg">
+</div>
+<!-- community-data END -->
+
+<!-- com-info -->
+<div class="bloc bgc-white bg-tile-d-bg l-bloc bg-repeat bloc-fill-screen b-divider" id="com-info">
+	<div class="container">
 		<div class="row">
 			<div class="col-sm-4">
-				<img src="img/highway.jpg" class="img-responsive" />
+				<img src="img/lazyload-ph.png" data-src="http://7xl0ck.com1.z0.glb.clouddn.com/cornfield.jpg" class="img-responsive img-frame-lg lazyload" />
 				<h3 class="mg-md">
 					我们是谁
 				</h3>
 				<p>
-					社群成员来自不同背景，有十多年投资经验的投资大拿，世界500强企业高管，开发者，区块链行业从业者，设计师，创业者等。实践分布式自治组织，通过不断学习、成长，用去中心化改变世界。
+					社群成员来自不同背景，有十多年投资经验的投资大拿，世界500强企业高管，开发者，区块链行业从业者，设计师，创业者等。实践分布式自治组织，通过不断学习、成长，用去中心化改变世界。<br>
 				</p>
 			</div>
 			<div class="col-sm-4">
-				<img src="img/cornfield.jpg" class="img-responsive" />
+				<img src="img/lazyload-ph.png" data-src="http://7xl0ck.com1.z0.glb.clouddn.com/highway.jpg" class="img-responsive lazyload" />
 				<h3 class="mg-md">
 					我们的愿景
 				</h3>
 				<p>
-					用去中心化改变世界<br />财富自由<br />实现人生梦想<br />终身学习<br />投资改变人生
+					用去中心化改变世界<br>财富自由<br>实现人生梦想<br>终身学习<br>投资改变人生
 				</p>
 			</div>
 			<div class="col-sm-4">
-				<img src="img/mountains.jpg" class="img-responsive" />
+				<img src="img/lazyload-ph.png" data-src="http://7xl0ck.com1.z0.glb.clouddn.com/cityskyoverlay.png" class="img-responsive lazyload" srcset="img/placeholder-image.png x" />
 				<h3 class="mg-md">
 					我们的使命
 				</h3>
@@ -200,19 +266,25 @@
 			</div>
 		</div>
 	</div>
-</div><!-- com-info END --><!-- com-member --><div class="bloc l-bloc bgc-white" id="com-member">
-	<div class="container bloc-sm">
+</div>
+<!-- com-info END -->
+
+<!-- com-member -->
+<div class="bloc bgc-white tc-outer-space bg-tile-d-bg l-bloc bg-repeat none bloc-fill-screen b-divider" id="com-member">
+	<div class="container fill-bloc-top-edge">
 		<div class="row">
 			<div class="col-sm-12">
-				<h2 class="text-center mg-md">
+				<h2 class="mg-md text-center">
 					团队
 				</h2>
 			</div>
 		</div>
-		<div class="row voffset">
+	</div>
+	<div class="container">
+		<div class="row">
 			<div class="col-sm-3">
-				<img src="img/image9.png" class="img-responsive" />
-				<h3 class="text-center mg-md">
+				<img src="img/lazyload-ph.png" data-src="http://7xl0ck.com1.z0.glb.clouddn.com/mm.png" class="img-responsive center-block img-frame-md lazyload" srcset="http://7xl0ck.com1.z0.glb.clouddn.com/mm@2x.png 2x, http://7xl0ck.com1.z0.glb.clouddn.com/mm@3x.png 3x" />
+				<h3 class="text-center mg-md tc-outer-space">
 					田蒙蒙
 				</h3>
 				<p class="text-center">
@@ -220,8 +292,8 @@
 				</p>
 			</div>
 			<div class="col-sm-3">
-				<img src="img/image11.png" class="img-responsive" />
-				<h3 class="text-center mg-md">
+				<img src="img/lazyload-ph.png" data-src="http://7xl0ck.com1.z0.glb.clouddn.com/rj.png" class="img-responsive center-block lazyload" srcset="http://7xl0ck.com1.z0.glb.clouddn.com/rj@2x.png 2x, http://7xl0ck.com1.z0.glb.clouddn.com/rj@3x.png 3x" />
+				<h3 class="text-center mg-md tc-outer-space">
 					王瑞俊
 				</h3>
 				<p class="text-center">
@@ -229,8 +301,8 @@
 				</p>
 			</div>
 			<div class="col-sm-3">
-				<img src="img/image5.png" class="img-responsive" />
-				<h3 class="text-center mg-md">
+				<img src="img/lazyload-ph.png" data-src="http://7xl0ck.com1.z0.glb.clouddn.com/wf.png" class="img-responsive center-block lazyload" srcset="http://7xl0ck.com1.z0.glb.clouddn.com/wf@2x.png 2x, http://7xl0ck.com1.z0.glb.clouddn.com/wf@3x.png 3x" />
+				<h3 class="text-center mg-md tc-outer-space">
 					朱文峰
 				</h3>
 				<p class="text-center">
@@ -238,8 +310,8 @@
 				</p>
 			</div>
 			<div class="col-sm-3">
-				<img src="img/image8.png" class="img-responsive" />
-				<h3 class="text-center mg-md">
+				<img src="img/lazyload-ph.png" data-src="http://7xl0ck.com1.z0.glb.clouddn.com/lj.png" class="img-responsive center-block lazyload" srcset="http://7xl0ck.com1.z0.glb.clouddn.com/lj@2x.png 2x, http://7xl0ck.com1.z0.glb.clouddn.com/lj@3x.png 3x" />
+				<h3 class="text-center mg-md tc-outer-space">
 					罗杰
 				</h3>
 				<p class="text-center">
@@ -249,8 +321,8 @@
 		</div>
 		<div class="row voffset-md">
 			<div class="col-sm-3">
-				<img src="img/image6.png" class="img-responsive" />
-				<h3 class="text-center mg-md">
+				<img src="img/lazyload-ph.png" data-src="http://7xl0ck.com1.z0.glb.clouddn.com/le.png" class="img-responsive center-block lazyload" srcset="http://7xl0ck.com1.z0.glb.clouddn.com/le@2x.png 2x, http://7xl0ck.com1.z0.glb.clouddn.com/le@3x.png 3x" />
+				<h3 class="text-center mg-md tc-outer-space">
 					乐高
 				</h3>
 				<p class="text-center">
@@ -258,8 +330,8 @@
 				</p>
 			</div>
 			<div class="col-sm-3">
-				<img src="img/image10.png" class="img-responsive" />
-				<h3 class="text-center mg-md">
+				<img src="img/lazyload-ph.png" data-src="http://7xl0ck.com1.z0.glb.clouddn.com/cb.png" class="img-responsive center-block lazyload" srcset="http://7xl0ck.com1.z0.glb.clouddn.com/cb@2x.png 2x, http://7xl0ck.com1.z0.glb.clouddn.com/cb@3x.png 3x" />
+				<h3 class="text-center mg-md tc-outer-space">
 					陈斌
 				</h3>
 				<p class="text-center">
@@ -267,8 +339,8 @@
 				</p>
 			</div>
 			<div class="col-sm-3">
-				<img src="img/image7.png" class="img-responsive" />
-				<h3 class="text-center mg-md">
+				<img src="img/lazyload-ph.png" data-src="http://7xl0ck.com1.z0.glb.clouddn.com/all.png" class="img-responsive center-block lazyload" srcset="http://7xl0ck.com1.z0.glb.clouddn.com/all@2x.png 2x, http://7xl0ck.com1.z0.glb.clouddn.com/all@3x.png 3x" />
+				<h3 class="text-center mg-md tc-outer-space">
 					伍加权
 				</h3>
 				<p class="text-center">
@@ -276,8 +348,8 @@
 				</p>
 			</div>
 			<div class="col-sm-3">
-				<img src="img/le3.png" class="img-responsive" />
-				<h3 class="text-center mg-md">
+				<img src="img/lazyload-ph.png" data-src="http://7xl0ck.com1.z0.glb.clouddn.com/le3.png" class="img-responsive center-block lazyload" srcset="http://7xl0ck.com1.z0.glb.clouddn.com/le3@2x.png 2x, http://7xl0ck.com1.z0.glb.clouddn.com/le3@3x.png 3x" />
+				<h3 class="text-center mg-md tc-outer-space">
 					邵其雷
 				</h3>
 				<p class="text-center">
@@ -286,107 +358,66 @@
 			</div>
 		</div>
 	</div>
-</div><!-- com-member END --><!-- Footer - com-activity --><div class="bloc l-bloc bgc-white" id="com-activity">
-	<div class="container bloc-lg">
+</div>
+<!-- com-member END -->
+
+<!-- beon-gallary -->
+<div class="bloc bgc-white l-bloc bloc-fill-screen b-divider" id="beon-gallary">
+	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
 				<h2 class="text-center mg-md">
 					往期活动
 				</h2>
-			</div>
-		</div>
-		<div class="row voffset">
-			<div class="col-sm-3">
-				<img src="img/image3.png" class="img-responsive" /><a href="#" data-lightbox="img/image1.png" data-caption="Image description"></a>
-				<h3 class="mg-md">
-					Title goes here
-				</h3>
-				<p>
-					Lorem ipsum dolor sit amet, adipiscing elit Aenean commodo ligula eget.
-				</p>
-			</div>
-			<div class="col-sm-3">
-				<a href="#" data-lightbox="img/image2.png" data-caption="Image description"><img src="img/image2.png" class="img-responsive" /></a>
-				<h3 class="mg-md">
-					Title goes here
-				</h3>
-				<p>
-					Lorem ipsum dolor sit amet, adipiscing elit Aenean commodo ligula eget.
-				</p>
-			</div>
-			<div class="col-sm-3">
-				<a href="#" data-lightbox="img/image3.png" data-caption="Image description"></a><img src="img/image1.png" class="img-responsive" />
-				<h3 class="mg-md">
-					Title goes here
-				</h3>
-				<p>
-					Lorem ipsum dolor sit amet, adipiscing elit Aenean commodo ligula eget.
-				</p>
-			</div>
-			<div class="col-sm-3">
-				<a href="#" data-lightbox="img/image4.png" data-caption="Image description"><img src="img/image4.png" class="img-responsive" /></a>
-				<h3 class="mg-md">
-					Title goes here
-				</h3>
-				<p>
-					Lorem ipsum dolor sit amet, adipiscing elit Aenean commodo ligula eget.
+				<p class="text-center sub-heading">
+					一些我们过去组织过的活动
 				</p>
 			</div>
 		</div>
 		<div class="row voffset">
 			<div class="col-sm-3">
-				<a href="#" data-lightbox="img/placeholder-image.png" data-caption="Image description"><img src="img/placeholder-image.png" class="img-responsive" /></a>
-				<h3 class="mg-md">
-					Title goes here
-				</h3>
-				<p>
-					Lorem ipsum dolor sit amet, adipiscing elit Aenean commodo ligula eget.
-				</p>
+				<a href="#" data-lightbox="http://7xl0ck.com1.z0.glb.clouddn.com/5.jpeg" data-gallery-id="gallery-1"><img src="img/lazyload-ph.png" data-src="http://7xl0ck.com1.z0.glb.clouddn.com/5.jpeg" class="img-responsive lazyload" /></a>
 			</div>
 			<div class="col-sm-3">
-				<a href="#" data-lightbox="img/placeholder-image.png" data-caption="Image description"><img src="img/placeholder-image.png" class="img-responsive" /></a>
-				<h3 class="mg-md">
-					Title goes here
-				</h3>
-				<p>
-					Lorem ipsum dolor sit amet, adipiscing elit Aenean commodo ligula eget.
-				</p>
+				<a href="#" data-lightbox="http://7xl0ck.com1.z0.glb.clouddn.com/6.jpeg" data-gallery-id="gallery-1"><img src="img/lazyload-ph.png" data-src="http://7xl0ck.com1.z0.glb.clouddn.com/6.jpeg" class="lazyload" width="220" height="165" /></a>
 			</div>
 			<div class="col-sm-3">
-				<a href="#" data-lightbox="img/placeholder-image.png" data-caption="Image description"><img src="img/placeholder-image.png" class="img-responsive" /></a>
-				<h3 class="mg-md">
-					Title goes here
-				</h3>
-				<p>
-					Lorem ipsum dolor sit amet, adipiscing elit Aenean commodo ligula eget.
-				</p>
+				<a href="#" data-lightbox="http://7xl0ck.com1.z0.glb.clouddn.com/007.jpeg" data-gallery-id="gallery-1"><img src="img/lazyload-ph.png" data-src="http://7xl0ck.com1.z0.glb.clouddn.com/007.jpeg" class="img-responsive lazyload" /></a>
 			</div>
 			<div class="col-sm-3">
-				<a href="#" data-lightbox="img/placeholder-image.png" data-caption="Image description"><img src="img/placeholder-image.png" class="img-responsive" /></a>
-				<h3 class="mg-md">
-					Title goes here
-				</h3>
-				<p>
-					Lorem ipsum dolor sit amet, adipiscing elit Aenean commodo ligula eget.
-				</p>
+				<a href="#" data-lightbox="http://7xl0ck.com1.z0.glb.clouddn.com/8.jpeg" data-gallery-id="gallery-1"><img src="img/lazyload-ph.png" data-src="http://7xl0ck.com1.z0.glb.clouddn.com/8.jpeg" class="img-responsive lazyload" /></a>
+			</div>
+		</div>
+		<div class="row voffset">
+			<div class="col-sm-3">
+				<a href="#" data-lightbox="http://7xl0ck.com1.z0.glb.clouddn.com/9.jpeg" data-gallery-id="gallery-1"><img src="img/lazyload-ph.png" data-src="http://7xl0ck.com1.z0.glb.clouddn.com/9.jpeg" class="img-responsive lazyload" /></a>
+			</div>
+			<div class="col-sm-3">
+				<a href="#" data-lightbox="http://7xl0ck.com1.z0.glb.clouddn.com/10.jpeg" data-gallery-id="gallery-1"><img src="img/lazyload-ph.png" data-src="http://7xl0ck.com1.z0.glb.clouddn.com/10.jpeg" class="img-responsive lazyload" /></a>
+			</div>
+			<div class="col-sm-3">
+				<a href="#" data-lightbox="http://7xl0ck.com1.z0.glb.clouddn.com/11.jpeg" data-gallery-id="gallery-1"><img src="img/lazyload-ph.png" data-src="http://7xl0ck.com1.z0.glb.clouddn.com/11.jpeg" class="img-responsive lazyload" /></a>
+			</div>
+			<div class="col-sm-3">
+				<a href="#" data-lightbox="http://7xl0ck.com1.z0.glb.clouddn.com/12.jpeg" data-gallery-id="gallery-1"><img src="img/lazyload-ph.png" data-src="http://7xl0ck.com1.z0.glb.clouddn.com/12.jpeg" class="img-responsive lazyload" /></a>
 			</div>
 		</div>
 	</div>
-</div><!-- Footer - com-activity END --><!-- Footer - bloc-7 --><div class="bloc l-bloc bgc-white" id="bloc-7">
-	<div class="container bloc-md">
+	<div class="container fill-bloc-bottom-edge">
 		<div class="row">
-			<div class="col-sm-10">
-				<h3 class="mg-md">
-					Enter your e-mail to get updates
-				</h3>
-			</div>
-			<div class="col-sm-2">
-				<a href="index.html" class="btn  btn-d  btn-lg">Subscribe now</a>
+			<div class="col-sm-12">
+				<div class="text-center">
+					<a href="index.html" class="btn btn-d btn-lg">More</a>
+				</div>
 			</div>
 		</div>
 	</div>
-</div><!-- Footer - bloc-7 END --><!-- Footer - com-connect --><div class="bloc l-bloc bgc-white" id="com-connect">
-	<div class="container bloc-lg">
+</div>
+<!-- beon-gallary END -->
+
+<!-- Footer - com-connect -->
+<div class="bloc l-bloc bgc-white " id="com-connect">
+	<div class="container bloc-xl">
 		<div class="row">
 			<div class="col-sm-4">
 				<div class="text-center">
@@ -405,14 +436,17 @@
 			</div>
 		</div>
 	</div>
-</div><!-- Footer - com-connect END -->
+</div>
+<!-- Footer - com-connect END -->
+
 </div>
 <!-- Main container END -->
+    
+
+
+<!-- Preloader -->
+<div id="page-loading-blocs-notifaction"></div>
+<!-- Preloader END -->
 
 </body>
-    
-<!-- Google Analytics -->
-
-<!-- Google Analytics END -->
-
 </html>
